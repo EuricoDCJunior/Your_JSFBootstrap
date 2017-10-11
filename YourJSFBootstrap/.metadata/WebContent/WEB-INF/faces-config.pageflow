@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15076772458410" configfile="/YourJSFBootstrap/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf15076773251291" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf15076773251292 pf15076773251293" inlinks="pf15076773251294 pf15076773251295" path="index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="newCustomer.xhtml" id="pf15076773251296" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15076773251292" path="newCustomer.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="showCustomer.xhtml" id="pf15076773251297" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf15076773251294" inlinks="pf15076773251293" path="showCustomer.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="newCustomer.xhtmk" id="pf15076773251298" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf15076773251295" path="newCustomer.xhtmk"/>
+  <links id="pf15076773251292" target="pf15076773251296" source="pf15076773251291" outcome="newCustomer" redirect="true"/>
+  <links id="pf15076773251293" target="pf15076773251297" source="pf15076773251291" outcome="showCustomer" redirect="true"/>
+  <links id="pf15076773251294" target="pf15076773251291" source="pf15076773251297" outcome="index" redirect="true"/>
+  <links id="pf15076773251295" target="pf15076773251291" source="pf15076773251298" outcome="index" redirect="true"/>
+</pageflow:Pageflow>
