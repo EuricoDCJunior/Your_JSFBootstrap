@@ -63,6 +63,12 @@
 				    	<h:outputText value="#{c.email}"/>
 					</h:column>
 					<h:column>
+						<f:facet name="header">
+							<h:outputLabel value="Categoria"/>
+						</f:facet>
+				    	<h:outputText value="#{c.category.description}"/>
+					</h:column>
+					<h:column>
 						<h:commandLink value="View" action="showCustomer?faces-redirect=true">
 							<f:setPropertyActionListener target="#{customerManagedBean.customer}" value="#{c}" />
 						</h:commandLink>		    	

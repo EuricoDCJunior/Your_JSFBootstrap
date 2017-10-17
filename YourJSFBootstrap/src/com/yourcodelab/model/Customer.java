@@ -4,13 +4,23 @@ public class Customer {
 	private Integer id;
 	private String name;
 	private String email;
-	
-	public Customer(Integer id, String name, String email){
+	private Category category;
+
+	public Customer(Integer id, String name, String email, Category category){
 		this.id = id;
 		this.name = name;
 		this.email = email;
+		this.category = category;
 	}
-	
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
 	public Integer getId() {
 		return id;
 	}

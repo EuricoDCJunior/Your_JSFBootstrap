@@ -6,6 +6,7 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
+import com.yourcodelab.model.Category;
 import com.yourcodelab.model.Customer;
 import com.yourcodelab.service.CustomerService;
 
@@ -21,7 +22,7 @@ public class CustomerManagedBean implements Serializable{
 	
 	public CustomerManagedBean(){
 		service = new CustomerService();
-		customer = new Customer(0, "", "");
+		customer = new Customer(0, "", "", new Category(0,""));
 		listCustomer = service.listAll();
 	}
 
